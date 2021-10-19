@@ -13,6 +13,7 @@
 		41E5A46F271F29CB00A51D80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E5A46E271F29CB00A51D80 /* Preview Assets.xcassets */; };
 		41E5A479271F339000A51D80 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5A478271F339000A51D80 /* Weather.swift */; };
 		41E5A47C271F341800A51D80 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5A47B271F341800A51D80 /* WeatherService.swift */; };
+		41E5A47E271F3BEB00A51D80 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5A47D271F3BEB00A51D80 /* WeatherViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,8 @@
 		41E5A46E271F29CB00A51D80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		41E5A478271F339000A51D80 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		41E5A47B271F341800A51D80 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		41E5A47D271F3BEB00A51D80 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		41E5A47F271F4B2100A51D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +58,12 @@
 		41E5A466271F29C900A51D80 /* BasicWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				41E5A47F271F4B2100A51D80 /* Info.plist */,
 				41E5A47A271F340C00A51D80 /* Services */,
 				41E5A477271F336800A51D80 /* Views */,
-				41E5A476271F336100A51D80 /* View Model */,
+				41E5A476271F336100A51D80 /* View Models */,
 				41E5A475271F335B00A51D80 /* Models */,
 				41E5A467271F29C900A51D80 /* BasicWeatherAppApp.swift */,
-				41E5A469271F29C900A51D80 /* ContentView.swift */,
 				41E5A46B271F29CB00A51D80 /* Assets.xcassets */,
 				41E5A46D271F29CB00A51D80 /* Preview Content */,
 			);
@@ -83,16 +86,18 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		41E5A476271F336100A51D80 /* View Model */ = {
+		41E5A476271F336100A51D80 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				41E5A47D271F3BEB00A51D80 /* WeatherViewModel.swift */,
 			);
-			path = "View Model";
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 		41E5A477271F336800A51D80 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				41E5A469271F29C900A51D80 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41E5A47E271F3BEB00A51D80 /* WeatherViewModel.swift in Sources */,
 				41E5A47C271F341800A51D80 /* WeatherService.swift in Sources */,
 				41E5A46A271F29C900A51D80 /* ContentView.swift in Sources */,
 				41E5A479271F339000A51D80 /* Weather.swift in Sources */,
@@ -236,6 +242,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -291,6 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -312,6 +320,7 @@
 				DEVELOPMENT_TEAM = 947MDTH7AR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BasicWeatherApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -342,6 +351,7 @@
 				DEVELOPMENT_TEAM = 947MDTH7AR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BasicWeatherApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
