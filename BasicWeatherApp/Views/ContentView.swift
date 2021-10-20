@@ -11,17 +11,19 @@ struct ContentView: View {
     
     @ObservedObject var weatherVM = WeatherViewModel()
     
-//    init() {
-//        self.weatherVM = WeatherViewModel()
-//    }
+    //    init() {
+    //        self.weatherVM = WeatherViewModel()
+    //    }
     
     var body: some View {
         VStack(alignment: .center) {
             TextField("Enter city name", text: $weatherVM.cityName, onCommit:{
                 weatherVM.search()})
-Spacer()
-            Text(weatherVM.temperature)
-            Text(weatherVM.humidity)
+            Spacer()
+            Text("Temp: " + weatherVM.temperature)
+            Text("Humidity: " + weatherVM.humidity)
+            Text("Max Temp: " + weatherVM.maxTemp)
+            Text("Min Temp: " + weatherVM.minTemp)
         }
     }
 }
